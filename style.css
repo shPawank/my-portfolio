@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  height: 90px;
+  width: 100%;
+  position: fixed;
+}
+#nav-name
+{
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: rgb(145, 102, 244);
+  text-align: start;
+  text-decoration: none;
+}
+nav,
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #150326;
+  color: aqua;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 23px;
+  font-size: 1.2rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  background-color: #150326;
+}
+.containers {
+  /* border: solid 1px black; */
+  display: flex;
+  height: 400px;
+  width: 100%;
+  background-color: #150326;
+}
+
+#text,#texts ,#nav-name{
+  /* font-size: 100px; */
+            /* text-align: center; */
+            background-image: url(portf.png);
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: rgb(0 0 0 / 20%);
+}
+.about {
+  position: relative;
+  width: 100%px;
+  height: 90vh;
+  border: 1px solid #ccc;
+  background-color: #150326;
+}
+.inner-me {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */
+  padding: 20px;
+}
+.parent {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  /* border: solid 1px rgb(232, 228, 228); */
+}
+
+.child1 {
+  height: 100%;
+  width: 100%;
+  background-color: aquamarine;
+  position: absolute;
+  background-color: #150326;
+  color: rgb(191, 226, 84);
+}
+
+.child2 {
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(193, 181, 9); */
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  /* text-align: center; */
+}
+#about-me {
+  font-size: 20rem;
+  text-align: center;
+  margin-top: 11.5%;
+  font-family: Madimi one;
+  color: white;
+}
+img {
+  border-radius: 10%;
+  opacity: 0.8;
+}
+
+.scroller {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(156, 185, 209);
+  border: solid 1px rgb(232, 228, 228);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.techno {
+  background-color: #150326;
+  height: 80%;
+  width: 20%;
+  margin: 10px;
+  border-radius: 10px;
+  display: inline-flex;
+  gap: 5px;
+  scroll-snap-type: y mandatory;
+  padding: 10px;
+}
+.techno #disc{
+ text-align: start;
+ color: rgb(219, 22, 22);
+}
+h3{
+  color: white;
+}
+.proj {
+  height: 100vh;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #150326;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  height: 18%;
+  width: 75%;
+  margin: 20px 0;
+  display: flex;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f0656;
+}
+#head{
+    font-size: 3rem;
+    font-family: Madimi one;
+    color: blueviolet;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Fit the entire image within the div */
+    object-position: center; /* Center the image within the div */
+    border-radius: 5px;
+    object-position: top left;
+    border-radius: 30px;
+  }
+
+.footer{
+  height:100px;
+  width: 100vw;
+  background-color:#2f0656;
+
+}
+@media only screen and (max-width: 768px) {
+  nav ul li {
+    margin: 10px;
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 50px;
+  }
+
+  .containers {
+    padding: 20px;
+  }
+
+  .about {
+    height: auto;
+  }
+
+  #about-me {
+    font-size: 10rem;
+    margin-top: 5%;
+  }
+
+  .techno {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  nav {
+    height: 50px;
+  }
+
+  nav ul li {
+    margin: 5px;
+    font-size: 0.8rem;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .containers {
+    padding: 10px;
+  }
+
+  #about-me {
+    font-size: 6rem;
+    margin-top: 3%;
+  }
+
+  .techno {
+    width: 70%;
+  }
+}
+.contact-me{
+  height:120px;
+  width: 100%;
+  display: flex;
+  background-color: #150326;
+}
+.link{
+  width:50%;
+  color:blueviolet ;
+  background-color: #150326;
+  border-radius: 20px;
+  border: solid 2px white;
+} 
+.contact{
+  border-radius: 20px;
+  width:50%;
+  color:blueviolet;
+  border: solid 2px white;
+}
+.contact ul>li{
+  padding:20px;
+}
+.link,.contact ul>li{
+  list-style: none;
+  font-family: Madimi one;
+}
+.link ul>li>a{
+  color:blueviolet;
+  text-decoration: none;
+  list-style: none !important;
+  outline: none;
+}
+.link ul>li>a:hover{
+  color:chocolate;
+
+}
+.contact ul>li:hover{
+  color:chocolate;
+}
+
+.doc{
+  height:100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: solid 2px white;
+  border-radius: 20px;
+  background-color: #150326;
+}
+.doc button{
+  height: 20px;
+  align-items: center;
+  margin-top: 40px;
+}
